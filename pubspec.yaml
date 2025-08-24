@@ -1,0 +1,26 @@
+name: sms_reader
+description: A Flutter plugin to read SMS messages from Android devices, with detailed fields and runtime permission handling.
+version: 0.1.0
+homepage: https://github.com/TESLA2402/sms_reader
+repository: https://github.com/TESLA2402/sms_reader
+issue_tracker: https://github.com/TESLA2402/sms_reader/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.sms_reader
+        pluginClass: SmsReaderPlugin
